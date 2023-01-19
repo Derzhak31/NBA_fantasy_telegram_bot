@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "nba-fantasy"
+version = "0.1.0"
+description = ""
+authors = ["Derzhak31 <derzhak31@gmail.com>"]
+readme = "README.md"
+packages = [{include = "nba_fantasy"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiogram = "^2.23.1"
+psycopg2 = "^2.9.5"
+pydantic = {extras = ["dotenv"], version = "^1.10.4"}
+python-dotenv = "^0.21.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
